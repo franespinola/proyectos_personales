@@ -1,0 +1,67 @@
+body{
+   background-color: #EAC926;
+   font-family: 'Roboto', sans-serif;
+
+}
+#boton1{
+   margin-left: 10px;
+   height: 40px;
+}
+.boton2{
+    margin-left: 250px;
+    color: white;
+    
+
+ }
+
+
+.rellenar{
+    width:max-content;
+    height: 40px;
+    color: #666;
+    font-size: large;
+    
+}
+#cuotas{
+    margin-left: 100px;
+    margin-top: 20px;
+}
+#cuenta{
+    margin-left: 10px;
+}
+#ingresar{
+    margin-left: 10px;
+}
+#comprar{
+    margin-left: 10px;
+}
+.nav{
+    font-size: 20px;
+}
+#tarjeta{
+    color:#03264C;
+    
+}
+
+#regalo{
+    color:#03264C
+}
+
+#seguridad{
+    color:#03264C
+}
+
+h2{
+    font-size: 24px;
+    
+}
+p{
+    font-size: 16px;
+}
+footer{
+    padding-top: 10px;
+    background-color: white; 
+    text-align: center;
+    display:inline-block;
+}
+
