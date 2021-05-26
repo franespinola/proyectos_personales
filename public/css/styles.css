@@ -1,67 +1,153 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
 body{
    background-color: #EAC926;
    font-family: 'Roboto', sans-serif;
+}
+
+header img {
+    width: 150px;
+    margin: 15px;
+}
+
+header h1 {
+    font-size: 12px;
+    text-align: center;
+    margin: 30px;
+}
+header nav {
+    display: none;
+}
+header nav ul {
+    padding: 0;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a{
+text-decoration: none;
+color: black;
 
 }
-#boton1{
-   margin-left: 10px;
-   height: 40px;
+
+#botonHamburguesa {
+display: block;
+margin: 0 auto;
+border: 0;
+height: 30px;
+font-size: 16px;
+background-color: #03264C;
+color: white;
+border-radius: 5px;
 }
-.boton2{
-    margin-left: 250px;
-    color: white;
-    
 
- }
-
-
-.rellenar{
-    width:max-content;
-    height: 40px;
-    color: #666;
-    font-size: large;
-    
-}
-#cuotas{
-    margin-left: 100px;
+.publicidad {
+    background-image: url(../img/img-home-banner.jpg);
+    height: 100px;
+    background-size: 100% 100%;
     margin-top: 20px;
 }
-#cuenta{
-    margin-left: 10px;
-}
-#ingresar{
-    margin-left: 10px;
-}
-#comprar{
-    margin-left: 10px;
-}
-.nav{
-    font-size: 20px;
-}
-#tarjeta{
-    color:#03264C;
-    
-}
 
-#regalo{
-    color:#03264C
+main {
+    text-align: center;
+    width: 90%;
 }
-
-#seguridad{
-    color:#03264C
+main img {
+    width: 150px;
 }
+main div section {
+    background-color: #ccc;
+  
+}
+main div section h2 {
 
-h2{
     font-size: 24px;
-    
 }
-p{
+main div section article {
+    border-top: 1px solid #ebebeb;
+    margin: 15px;
+    padding: 15px;
+    background-color: #eee;
+}
+
+main div section article p i {
+    margin-top: 10px;
+    color: green;
+    border: 1px solid green;
+    border-radius: 9999px;
+    padding: 10px;
+
+}
+
+
+.precio {
+    font-size: 18px;
+}
+
+.descuento {
     font-size: 16px;
+    color: green;
+}
+
+.descripcion {
+    display: none;
 }
 footer{
     padding-top: 10px;
     background-color: white; 
     text-align: center;
-    display:inline-block;
+    
 }
+
+footer div {
+    margin-top: 30px;
+}
+
+footer div h2{
+    margin: 0;
+    font-size: 16px;
+}
+
+footer div p {
+    margin: 0;
+    font-size: 12px;
+}
+
+footer div i {
+    color: #03264C;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 361px) {
+    
+    header nav {
+        display: block;
+    }
+    .descripcion {
+        display: block;
+    }
+
+    #botonHamburguesa {
+        display: none;
+    }
+
+    main div section article {
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+    }
+}
+
+@media screen and (min-width: 769px) {
+   
+}
+
+
+
 
