@@ -21,36 +21,38 @@
 
     <img src="../public/img/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre">
 
-    <form>
-      <input placeholder="Buscar productos, marcas" type="text" />
-      <button><i class="fas fa-search"></i></button>
+    <form action="/search"method="GET">
+      <input placeholder="Buscar productos, marcas y más" type="text" name="keywords"/>
+      <button>
+        <i class="fas fa-search" id="lupa"></i>
+      </button>
     </form>
 
     <h1><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjetas de crédito</h1>
 
     <nav>
-      <ul>
+      <ul class="left">
         <li><a href="#">Ofertas</a></li>
         <li><a href="#">Tiendas Oficiales</a></li>
         <li><a href="#">Vender</a></li>
         <li><a href="#">Ayuda</a></li>
       </ul>
-      <ul>
-        <li><a href="#">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
-        <li><a href="#">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+      <ul class="right">
+        <li><a href="register.html">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+        <li><a href="login.html">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
         <li><a href="#">Mis Compras <i class="fas fa-shopping-basket"></i></a></li>
       </ul>
     </nav>
 
-    <button id="botonHamburguesa"><i class="fas fa-bars"></i></button>
+    <button type="button" id="botonHamburguesa"><i class="fas fa-bars"></i></button>
   </header>
 
   <div class="publicidad"></div>
 
   <main>
     <div>
-      <section>
-        <h2>Basado en tu última visita</h2>
+      <h2>Basado en tu última visita</h2>
+      <section class="s_visitas">
         <article>
           <img src="../public/img/img-macbook-pro-2019.jpg" alt="MacBook Pro 2019">
           <p><i class="fas fa-truck"></i></p>
@@ -65,9 +67,23 @@
           <p class="descuento">10% Off</p>
           <p class="descripcion"> Samsung Galaxy S10</p>
         </article>
+        <article>
+          <img src="../public/img/img-tv-samsung-smart.jpg" alt="Samsung Galaxy S10">
+          <p><i class="fas fa-truck"></i></p>
+          <p class="precio">$120.000</p>
+          <p class="descuento">10% Off</p>
+          <p class="descripcion"> Samsung Galaxy S10</p>
+        </article>  
+        <article>
+          <img src="../public/img/img-cafetera-moulinex.jpg" alt="Samsung Galaxy S10">
+          <p><i class="fas fa-truck"></i></p>
+          <p class="precio">$10.500</p>
+          <p class="descuento">10% Off</p>
+          <p class="descripcion"> Samsung Galaxy S10</p>
+        </article>
       </section>
-      <section>
-        <h2>Ofertas</h2>
+      <h2>Ofertas</h2>
+      <section class="s_ofertas">
         <article>
           <img src="../public/img/img-cafetera-moulinex.jpg" alt="Cafetera Moulinex">
           <p><i class="fas fa-truck"></i></p>
@@ -80,6 +96,18 @@
           <p class="precio">$80.500</p>
           <p class="descuento">10% Off</p>
           <p class="descripcion">TV Samsung Smart</p>
+        </article>
+        <article>
+          <img src="../public/img/img-cafetera-moulinex.jpg" alt="Cafetera Moulinex">
+          <p><i class="fas fa-truck"></i></p>
+          <p class="precio">$10.500</p>
+          <p class="descripcion">Cafetera Moulinex</p>
+        </article>
+        <article>
+          <img src="../public/img/img-cafetera-moulinex.jpg" alt="Cafetera Moulinex">
+          <p><i class="fas fa-truck"></i></p>
+          <p class="precio">$10.500</p>
+          <p class="descripcion">Cafetera Moulinex</p>
         </article>
       </section>
     </div>

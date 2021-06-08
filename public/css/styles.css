@@ -1,27 +1,81 @@
+
+:root{
+    --color:rgb(245, 229, 229);
+    --h2:24px;
+    --color_input:rgb(100, 100, 100);
+}
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-
 body{
-   background-color: #EAC926;
-   font-family: 'Roboto', sans-serif;
+    background-color: #EAC926;
+    font-family: 'Roboto', sans-serif;
+    
 }
 
 header img {
-    width: 150px;
-    margin: 15px;
-}
+    width: 50%;
+    height: 35px;
+    margin-top: 15px;
 
+  
+}
+form input{
+    width: 40%;
+    margin-left: 11rem;
+    background-color: #fff;
+    font-size: 14px;
+    outline:none;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+    border-radius: 2px;
+    border: 0 rgba(0,0,0,.2);
+    height: 30px;
+    position: relative;
+    bottom: 40px;
+    right: 10px;
+   
+
+    
+}
+form button{
+    width: 25px;
+    height: 30px;
+    background-color: #fff;
+    font-size: 16px;
+    outline:none;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+    border-radius: 2px;
+    border: 0 rgba(0,0,0,.2);
+    position: relative;
+    bottom: 39px;
+    right: 15px;
+    
+ 
+    
+
+}
+form button #lupa{
+    width:auto;
+    font-size:16px;
+    color:#666;
+    
+
+}
 header h1 {
     font-size: 12px;
     text-align: center;
-    margin: 30px;
+    margin-bottom: 15px;
+    position: relative;
+    bottom: 15px;
+    z-index: -999;
 }
 header nav {
     display: none;
+    
 }
 header nav ul {
     padding: 0;
@@ -35,46 +89,64 @@ header nav ul li a{
 text-decoration: none;
 color: black;
 
+
 }
 
 #botonHamburguesa {
-display: block;
-margin: 0 auto;
-border: 0;
-height: 30px;
-font-size: 16px;
-background-color: #03264C;
-color: white;
-border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    border: 0;
+    height: 30px;
+    width: 30px;
+    font-size: 16px;
+    background-color: #03264C;
+    color: white;
+    border-radius: 5px;
+    position: relative;
+    bottom: 20px;
 }
 
 .publicidad {
     background-image: url(../img/img-home-banner.jpg);
     height: 100px;
     background-size: 100% 100%;
-    margin-top: 20px;
+    margin-top: -10px;
+    width: 100%;
 }
 
 main {
     text-align: center;
-    width: 90%;
+    width: 100%;
 }
 main img {
     width: 150px;
 }
-main div section {
-    background-color: #ccc;
-  
-}
+/*main div section {
+    
+}*/
 main div section h2 {
 
     font-size: 24px;
+    margin-top: 10px;
+
+    
 }
+
+.s_visitas article p:nth-child(2){
+    border-top: 1px solid #Ccc;
+}
+.s_visitas article p i {
+ 
+    position: relative;
+    right: -70px;
+    top: -25px;
+}
+
 main div section article {
     border-top: 1px solid #ebebeb;
-    margin: 15px;
+    margin: 5px;
     padding: 15px;
-    background-color: #eee;
+    background-color: #fff;
 }
 
 main div section article p i {
@@ -82,18 +154,24 @@ main div section article p i {
     color: green;
     border: 1px solid green;
     border-radius: 9999px;
-    padding: 10px;
+    padding: 5px;
+    
+      
 
 }
 
 
 .precio {
     font-size: 18px;
+    width: 30%;
+    display: flex;
 }
 
 .descuento {
     font-size: 16px;
     color: green;
+    width: 70%;
+    display: flex;
 }
 
 .descripcion {
@@ -126,13 +204,34 @@ footer div i {
     margin-bottom: 10px;
 }
 
-@media screen and (min-width: 361px) {
-    
+@media screen and (min-width: 361px) {  /*-----------------  version desktop --------------------*/
+    header img {
+        width: 50%;
+        height: 50px;
+        margin: 30px;
+        margin-left: -60px;
+        position: relative;
+        bottom: 15px;
+        left: 5%;
+     
+        
+    }
+    main section{
+        width: 90%;
+        margin:100px
+    }
+
     header nav {
         display: block;
     }
-    .descripcion {
+    .descripcion{
         display: block;
+
+        
+    }
+    .descripcion:hover{
+            
+        
     }
 
     #botonHamburguesa {
@@ -140,14 +239,315 @@ footer div i {
     }
 
     main div section article {
-        box-shadow: 0px 0px 10px rgb(100,100,100);
+        box-shadow: 0px 0px 5px rgb(100,100,100);
+        transition: box-shadow 0.5s ;
+        /*transition: translate 0.5s;*/
+        transition:transform 0.5s;
+        /*width: 500px;
+        height: 500px;*/
     }
+    main div section article:hover{
+        box-shadow: 12px 12px 16px 12px rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+        /*translate: 10px ;*/
+        transform: translate(0,20px);
+    }
+    article img{
+        width: 250px;
+    }
+    .precio {
+        font-size: 18px;
+        width: 30%;
+        display: flex;
+
+    }
+    
+    .descuento {
+        width: 70%;
+        display: flex;
+        margin-left: 80px;
+        margin-top: -20px;
+
+
+    }
+    main div{
+        background-color: var(--color);
+    }
+    main div h2{
+        display: flex;
+        margin-left: 100px;
+        position: relative;
+        top: 70px;
+        font-size: var(--h2);
+        font-weight: bolder;
+    }
+    main div section article p i {
+        display: block;
+        margin-top: 10px;
+        color: green;
+        border: 1px solid green;
+        border-radius: 9999px;
+        padding: 5px;
+        font-size:16px;
+        width: ​30​px​;
+        height: ​30​px​;
+        background-color: #fff;
+        position: absolute;
+        right: 100px;
+        
+
+    }
+    header form input{
+        box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+        height: 39px;
+        width: 25%;
+        font-size: 16px;
+        padding: 7px 60px 9px 15px;
+        border-radius: 2px;
+        background-color: #fff;
+        border: 0 rgba(0,0,0,.2);
+        margin-left: 650px;
+        position: relative;
+        bottom: 100px;
+        
+    }
+    form button{
+        position:relative;
+        bottom: 99px;
+        width: 30px;
+        height: 39px;
+        background-color: #fff;
+        font-size: 16px;
+        outline:none;
+        box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+        border-radius: 2px;
+        border: 0 rgba(0,0,0,.2);
+        right: 15px;
+     
+        
+
+    }
+    form button #lupa{
+        font-size:16px;
+        color:#666;
+        
+    
+    }
+    
+    nav .left {
+        display: flex;
+        text-align: center;
+        font-weight: bold;
+        position: relative;
+        bottom: 140px;
+        left: 250px;
+        
+    }
+
+    .left :first-child{
+        margin-left: 20px;
+        
+    }
+    nav .right {
+        font-weight: bold;
+        display:flex;
+        justify-content:right;
+        flex-flow: row wrap;
+        margin-right: 300px; 
+        position: relative;
+        bottom: 160px;
+        right: 50px
+        
+    }
+
+    .right :first-child{
+        margin-left: 10px;
+    }
+    header h1 {
+        font-size: 16px;
+        text-align: center;
+        margin: 30px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        bottom: 160px;
+        left: 450px;
+
+    }
+    header nav ul li a i{
+      position: relative;
+      right: 10px;
+        
+        
+    }
+    .publicidad {
+        
+            height: 400px;
+            margin-top: -140px;
+           
+        }
+    
+    .s_visitas{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .s_ofertas{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+
+
+                /*---------------------------------------------*/
+                /*---------------------------------------------*/
+                /*---------------------------------------------*/
+
+/* register css */
+
+.registro{
+    width: 30%;
+    height: 800px;
+    background-color: var(--color);
+    margin-top: 100px;
+    margin-left: 20px;
+    border-radius: 10px;
+    
+    
+
+}
+.registro form p input{
+    margin-top: 50px;
+    margin-left: -100px;
+    color: rgb(100, 100, 100);
+    width: 400px;
+    padding-left: 20px;
 }
 
-@media screen and (min-width: 769px) {
+.registro form h3{
+    font-weight:bolder;
+    display: flex;
+    justify-content:left;
+    margin-left: 30px;
+    
+}
+.registro form h3{
+    margin-top: 30px;
+    position: relative;
+    bottom:30px;
+    
+}
+
+.registro label{
+    font-size: 16px;
+
+    
+}
+label span{
+    position: relative;
+    bottom: 27px;
+    right: 10px;
+}
+
+.seleccion{
+    display: flex;
+    
+  
+}
+.seleccion2{
+    font-size: 16px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 10px;
+    
+}
+.seleccion2 span{
+    display: flex;
+    justify-content:start;
+    position: relative;
+    left:50px;
+    bottom: 40px
+
+    
+}
+.seleccion2 input {
+    width: 1em;
+    display: block;
+    margin-bottom: -10px;
+    position: relative;
+    ;
+    
    
 }
 
+input[type=radio] {
+    border: 0px;
+    width: 100%;
+    height: 1em;
+    position: relative;
+    bottom:10px;
+    right: 250px;
 
+    
+}
+input[type=checkbox]{
+    margin-bottom: -25px;
+    margin-top: 15px;
+    z-index: 1;
+  
+}
 
+/*-----------------------------login----------------------------------*/
+   
+    .login_main{
+       
 
+    }
+    .login{
+       width: 100%;
+       height: 325px;
+       padding-top: 100px;
+       
+       
+   }
+  
+
+   .login form{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     
+    
+     
+   }
+   .login form input{
+       font-size:16px;
+       color: var(--color_input);
+       height: 30px;
+       margin-bottom: 30px;
+       width: 30%
+       
+    }
+    
+    .login button{
+        display: block;
+        margin-left: 745px;
+        font-size: 16px;
+        width: 30%;
+        height: 40px;
+        background-color:#03264C;
+        color:#fff;
+        border-radius: 10px;
+        border: none;
+        cursor:pointer;
+        
+        
+        
+    }
+    .login button:hover{
+        background-color:#0022AA;
+
+    }
+
+}
+​

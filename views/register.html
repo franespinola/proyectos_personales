@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Mercado Liebre</title>
+  <link rel="stylesheet" href="../public/css/styles.css">
+  </link>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  </link>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+</head>
+
+
+<body>
+
+<main>
+      <div class="registro">
+        <form action="register.html"method="POST">
+          <p>
+            <input placeholder="Nombre y Apellido" type="text" />
+          </p>
+          <p>
+            <input placeholder="Nombre de usuario" type="text" />
+          </p>
+          <p>
+            <input placeholder="Email" type="email" />
+          </p>
+          <p>
+            <input placeholder="Domicilio" type="text" />
+          </p>
+          <h3>Fecha de Nacimiento</h3>
+          <p>
+            <input placeholder="MM/DD/YYYY"type="date" name="fecha"/>
+          </p>
+          <p>
+            <h3>Perfil del usuario</h3>
+            <div class="seleccion">
+              <label> 
+                <input type="radio" name="perfil_user"><span>Comprador</span></input>
+              </label>
+              <label> 
+                <input type="radio" name="perfil_user" ><span>Vendedor</span></input>
+              </label>
+            </div>
+            <h3>Intereses</h3>
+            <div class="seleccion2">
+                <input type="checkbox" name="perfil_user" ><span>Electro</span></input>
+                <input type="checkbox" name="perfil_user" ><span>Moda</span></input>
+                <input type="checkbox" name="perfil_user" ><span>Hogar</span></input>
+                <input type="checkbox" name="perfil_user" ><span>Juguetería</span></input>
+                <input type="checkbox" name="perfil_user" ><span>Vida sana</span></input>
+            </div>
+          </p>
+        </form>
+    </div>
+</main>
+  
+</body>
+
+</html>
