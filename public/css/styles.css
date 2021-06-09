@@ -208,7 +208,7 @@ footer div i {
     margin-bottom: 10px;
 }
 
-@media screen and (min-width: 385px) {  /*-----------------  version desktop --------------------*/
+@media screen and (min-width: 361px) and (orientation:landscape){  /*-----------------  version desktop --------------------*/
     
     
     header img {
