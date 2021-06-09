@@ -208,7 +208,7 @@ footer div i {
     margin-bottom: 10px;
 }
 
-@media screen and (min-width: 361px) {  /*-----------------  version desktop --------------------*/
+@media screen and (min-width: 385px) {  /*-----------------  version desktop --------------------*/
     
     
     header img {
@@ -421,7 +421,7 @@ footer div i {
                 /*---------------------------------------------*/
                 /*---------------------------------------------*/
 
-/* register css */
+/* register css  ----desktop----*/
 
 .body_register{
     background-color: #EAC926;
@@ -520,7 +520,7 @@ input[type=checkbox]{
   
 }
 
-/*-----------------------------login----------------------------------*/
+/*-----------------------------login--------------------------------- ----desktop----*/
    
     .login_main{
        
