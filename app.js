@@ -18,7 +18,7 @@ app.get('/login.html', (req, res) => {
 app.use('/public/img', express.static(__dirname +'/public/img'));
 console.log(__dirname)  
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, function(){
     console.log("Servidor corriendo");
 });
 
