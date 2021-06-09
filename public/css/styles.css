@@ -3,6 +3,7 @@
     --color:rgb(245, 229, 229);
     --h2:24px;
     --color_input:rgb(100, 100, 100);
+    --color_header: #EAC926;
 }
 
 * {
@@ -12,11 +13,13 @@
 }
 
 body{
-    background-color: #EAC926;
+    background-color:var(--color);
     font-family: 'Roboto', sans-serif;
     
 }
-
+header{
+    background-color: var(--color_header);
+}
 header img {
     width: 50%;
     height: 35px;
@@ -71,8 +74,9 @@ header h1 {
     margin-bottom: 15px;
     position: relative;
     bottom: 15px;
-    z-index: -999;
+    z-index: 1;
 }
+
 header nav {
     display: none;
     
@@ -205,6 +209,8 @@ footer div i {
 }
 
 @media screen and (min-width: 361px) {  /*-----------------  version desktop --------------------*/
+    
+    
     header img {
         width: 50%;
         height: 50px;
@@ -216,14 +222,28 @@ footer div i {
      
         
     }
+    header{
+        background-color:var(--color_header) ;
+       
+    }
+    header form input{
+        z-index: 9999;
+    }
+    header form button {
+        z-index: 999;
+        
+    }
+    
     main section{
         width: 90%;
-        margin:100px
+        margin:100px;
     }
 
     header nav {
         display: block;
+    
     }
+
     .descripcion{
         display: block;
 
@@ -403,6 +423,9 @@ footer div i {
 
 /* register css */
 
+.body_register{
+    background-color: #EAC926;
+}
 .registro{
     width: 30%;
     height: 800px;
